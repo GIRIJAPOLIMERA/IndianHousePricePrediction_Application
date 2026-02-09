@@ -20,7 +20,7 @@ st.write("Prediction of House Price using Machine Learning Model")
 # ----------------------------
 @st.cache_data
 def load_data():
-    return pd.read_csv("india_housing_prices.csv")
+    return pd.read_csv("india_housing_prices_small.csv")
 
 data = load_data()
 
@@ -165,3 +165,4 @@ if st.button("Predict House Price"):
         final_price = base_price * 0.95
 
     st.success(f"💰 Estimated House Price: ₹ {final_price:.2f} Lakhs")
+
